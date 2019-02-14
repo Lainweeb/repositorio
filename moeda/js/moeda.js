@@ -1,7 +1,8 @@
-let botaoEnviar = document.querySelector("button");
+const moedas = document.querySelector("#opcaoMoeda")
 
-botaoEnviar.addEventListener("click", function(){
-	let valorEscolhido = document.querySelector("#opcaoMoeda").value;
+moedas.addEventListener("click", function(e){
+	let valorEscolhido = this.value;
+	console.log(valorEscolhido)
 	if(valorEscolhido == ""){
 		return false;
 	}
