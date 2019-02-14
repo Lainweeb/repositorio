@@ -2,8 +2,8 @@ const moedas = document.querySelector("#opcaoMoeda")
 
 moedas.addEventListener("click", function(e){
 	let valorEscolhido = this.value;
-	console.log(valorEscolhido)
 	if(valorEscolhido == ""){
+		document.querySelector("#resultado").innerHTML = ''
 		return false;
 	}
 	let api = `https://economia.awesomeapi.com.br/${valorEscolhido}`;
